@@ -45,6 +45,7 @@ variable "width" {
 }
 
 variable "image" {
+  default = "cat"
   description = "Image to generate"
 }
 
