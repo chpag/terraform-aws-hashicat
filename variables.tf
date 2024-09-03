@@ -44,6 +44,11 @@ variable "width" {
   description = "Image width in pixels."
 }
 
+variable "image" {
+  default = "cat"
+  description = "Image to generate"
+}
+
 variable "placeholder" {
   default     = "loremflickr.com"
   description = "Image-as-a-service URL. Some other fun ones to try are fillmurray.com, placecage.com, placebeard.it, loremflickr.com, baconmockup.com, placeimg.com, placebear.com, placeskull.com, stevensegallery.com, placedog.net"
