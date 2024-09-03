@@ -34,7 +34,7 @@ variable "admin_username" {
   default     = "hashicorp"
 }
 
-variable "var.cidr_block" {
+variable "cidr_block" {
   description = "CIDR Block for Security Group"
   default = "0.0.0.0/0"
 }
