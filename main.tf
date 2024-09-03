@@ -171,7 +171,7 @@ resource "null_resource" "configure-cat-app" {
       "sudo systemctl start apache2",
       "sudo chown -R ubuntu:ubuntu /var/www/html",
       "chmod +x *.sh",
-      "PLACEHOLDER=${var.placeholder} WIDTH=${var.width} HEIGHT=${var.height} PREFIX=${var.prefix} ./deploy_app.sh",
+      "PLACEHOLDER=${var.placeholder} WIDTH=${var.width} HEIGHT=${var.height} PREFIX=${var.prefix} IMG=${var.image} ./deploy_app.sh",
       "sudo apt -y install cowsay",
       "cowsay Mooooooooooo!",
     ]
