@@ -34,6 +34,10 @@ variable "admin_username" {
   default     = "hashicorp"
 }
 
+variable "var.cidr_block" {
+  description = "CIDR Block for Security Group"
+  default = "0.0.0.0/0"
+}
 variable "height" {
   default     = "400"
   description = "Image height in pixels."
